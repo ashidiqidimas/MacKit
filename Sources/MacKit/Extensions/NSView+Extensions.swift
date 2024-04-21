@@ -18,7 +18,7 @@ extension NSView {
     /// The background color of the view.
     ///
     /// It will set `wantsLayer` to `true` if it's not already set.
-    public var backgroundColor: NSColor? {
+    public var layerBackgroundColor: NSColor? {
         get {
             guard let cgColor = layer?.backgroundColor else { return nil }
             return NSColor(cgColor: cgColor)
